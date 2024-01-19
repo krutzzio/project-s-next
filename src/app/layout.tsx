@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
-import { Montserrat } from 'next/font/google'
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 import './globals.css'
 
-const montserrat = Montserrat({ subsets: ['latin'] })
+
 
 export const metadata: Metadata = {
   title: 'Project-s',
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className}` }>{children}</body>
+      <body className={`${GeistSans.className}` }>{children}</body>
     </html>
   )
 }
