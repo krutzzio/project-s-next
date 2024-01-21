@@ -13,6 +13,8 @@ export default function Home() {
           <PlayerInfoPrev />
           <PlayerInfoPrev />
           <PlayerInfoPrev />
+          <PlayerInfoPrev />
+          <PlayerInfoPrev />
 
         </section>
       </main>
