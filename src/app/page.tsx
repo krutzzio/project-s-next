@@ -12,7 +12,7 @@ export default function Home() {
       <div className="grid grid-cols-3 gap-4">
 
         <div className='m-h-64 overflow-hidden hover:m-h-96'>
-          <div className=" bg-stone-800 mt-8 w-11/12 max-w-96 p-4 rounded flex flex-col justify-around transition-all">
+          <div className="bg-stone-800 mt-8 w-11/12 max-w-96 p-4 rounded flex flex-col justify-around transition-all">
             <section className="flex justify-between">
               <section className="text-2xl flex flex-col justify-between">
                 <h3>Enrique Gomez</h3>

@@ -7,7 +7,7 @@ export function PlayerInfoPrev() {
     const [showDescription, setShowDescription] = useState(false)
 
     return (
-        <div className=" bg-stone-800 mt-8 w-11/12 max-w-96 p-4 rounded-lg grid grid-cols-2 gap-y-4 auto-cols-fr transition-all"
+        <div className="bg-stone-800 mt-8 w-11/12 max-w-96 p-4 rounded-lg grid grid-cols-2 gap-y-4 auto-cols-fr transition-all"
             onMouseEnter={() => setShowDescription(true)}
             onMouseLeave={() => setShowDescription(false)}>
             <section className="text-2xl flex flex-col justify-between">

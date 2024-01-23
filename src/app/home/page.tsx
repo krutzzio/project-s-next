@@ -8,19 +8,20 @@ export default function Home() {
       </header>
       <main>
         <h1>Liga seleccionada</h1>
-        <section className="grid grid-cols-4">
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
-          <PlayerInfoPrev />
+        <section className="grid grid-cols-4 transition-all ">
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
+          <div className="hover:row-span-2 transition-all"><PlayerInfoPrev /></div>
         </section>
       </main>
     </main>
