@@ -2,7 +2,7 @@ import { SideNav } from "../ui/SideNav"
 
 
 
-export default function RootLayout({
+export default function HomeLayout({
     children,
 }: {
     children: React.ReactNode
