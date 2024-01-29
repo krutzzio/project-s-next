@@ -1,4 +1,7 @@
 import { PlayerInfoPrev } from "../../ui/PlayerInfoPrev";
+import { PlayerInfoPrev2 } from "../../ui/PlayerInfoPrev2";
+import { PlayerInfoPrev3 } from "../../ui/PlayerInfoPrev3";
+import { PlayerInfoPrev4 } from "../../ui/PlayerInfoPrev4";
 import styles from "@/app/ui/grids-layout.module.css"
 import PLAYERS from "@/test/playersFetch.json"
 
@@ -10,9 +13,13 @@ export default function Home() {
         <main className="mx-4">
             <h1 className="text-xl mb-4">Lliga</h1>
             <section className={styles.gridListPlayers}>
-                {
+                {/*
                     playersArray.map((player, i) => <PlayerInfoPrev key={i} infoPlayer={PLAYERS} />)
-                }
+    */}
+                <PlayerInfoPrev infoPlayer={PLAYERS} />
+                <PlayerInfoPrev2 infoPlayer={PLAYERS} />
+                <PlayerInfoPrev3 infoPlayer={PLAYERS} />
+                <PlayerInfoPrev4 infoPlayer={PLAYERS} />
             </section>
         </main>
     )
