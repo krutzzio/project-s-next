@@ -1,9 +1,14 @@
+import { PlayerInfoPrev } from "../../ui/PlayerInfoPrev";
+import styles from "@/app/ui/grids-layout.module.css"
+import PLAYERS from "@/test/playersFetch.json"
 
+export default function Home() {
 
-export default function Player() {
-
-    return(
-        <h1>PAGINA JUGADOR ESPECIFIC</h1>
-        
+    return (
+        <main className="">
+            <h1 className="focus:text-orange-600">
+                PAGINA JUGADOR
+            </h1>
+        </main>
     )
 }

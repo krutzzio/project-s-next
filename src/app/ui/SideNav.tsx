@@ -9,10 +9,7 @@ export function SideNav() {
     const [ligaSelected, setLigaSelected] = useState<number | null>(null)
 
     return (
-        <nav className="flex h-full flex-col gap-4 px-8 py-4 md:px-4 md:mx-4 ">
-            <header className="h-40">
-                <img src="https://scoutbasketball.com/images/sb100@2x.png" alt="Logo Vindel Scouts" />
-            </header>
+        <nav className="flex h-full flex-col px-8 py-4 md:px-4 md:mx-4 ">
             <main className="h-full px-4 bg-stone-800 rounded">
                 <h1 className="flex items-baseline justify-center gap-4 text-3xl pt-8">Ligas <FaBasketball className="text-2xl text-orange-600" /></h1>
                 <ul className="my-8 mx-auto flex flex-col items-baseline justify-center gap-4 text-lg w-fit hover:text-neutral-300">

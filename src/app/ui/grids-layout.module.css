@@ -1,0 +1,53 @@
+.gridListPlayers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+            minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.gridLayoutLeagues {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+        "barra busqueda busqueda busqueda busqueda logo logo"
+        "contenido contenido contenido contenido contenido contenido contenido"
+        "contenido contenido contenido contenido contenido contenido contenido"
+        "contenido contenido contenido contenido contenido contenido contenido"
+        "contenido contenido contenido contenido contenido contenido contenido"
+        "contenido contenido contenido contenido contenido contenido contenido"
+        "contenido contenido contenido contenido contenido contenido contenido"
+    ;
+}
+
+@media (min-width: 768px) {
+    .gridLayoutLeagues {
+        grid-template-areas:
+            "logo busqueda busqueda busqueda busqueda busqueda busqueda"
+            "barra contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido"
+        ;
+    }
+}
+
+.gridLayoutLeagues .logo {
+    grid-area: logo;
+}
+
+.gridLayoutLeagues .header {
+    grid-area: busqueda;
+}
+
+.gridLayoutLeagues .aside {
+    grid-area: barra;
+}
+
+.gridLayoutLeagues .main {
+    grid-area: contenido;
+    overflow: auto;
+}
