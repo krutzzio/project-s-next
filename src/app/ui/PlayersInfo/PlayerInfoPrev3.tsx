@@ -4,13 +4,13 @@ import styles from "@/app/ui/players-info.module.css"
 import InfoIcon from '@mui/icons-material/Info';
 
 
-export function PlayerInfoPrev4({ infoPlayer }: { infoPlayer: any }) {
+export function PlayerInfoPrev3({ infoPlayer }: { infoPlayer: any }) {
 
     return (
-        <div tabIndex={0} className="grid gird-cols-2 gap-y-3 p-3 max-h-60 focus-within:max-h-[64rem] rounded-lg
+        <div tabIndex={0} className="grid gird-cols-2 gap-y-3 p-3 max-h-[19rem] focus-within:max-h-[64rem] rounded-lg
          bg-stone-800 border-solid border-4 border-transparent focus-within:border-orange-600 overflow-hidden transition-all duration-150">
             <section className="text-2xl flex flex-col justify-between">
-                <Link href={`/player/${infoPlayer.playerId}`} className={`${styles.linkToInfo} bg-orange-600 p-2 rounded`}>{infoPlayer.name}</Link>
+                <Link href={`/player/${infoPlayer.playerId}`} className={styles.linkToInfo}>{infoPlayer.name}</Link>
                 <h3>{infoPlayer.team}</h3>
                 <h3>{infoPlayer.generation}</h3>
             </section>
@@ -28,6 +28,7 @@ export function PlayerInfoPrev4({ infoPlayer }: { infoPlayer: any }) {
                     <h3>GP: {infoPlayer.GP}</h3>
                 </section>
             </section>
+            <Link href={"/player/playerId"} className="col-span-2 h-10 bg-white rounded flex justify-center items-center gap-2 hover:bg-orange-600 font-bold text-stone-950 transition-colors"> <InfoIcon /> Info.</Link>
 
             <article className={`col-span-2`}>
                 <h3 className="text-xl mb-2">Description:</h3>
