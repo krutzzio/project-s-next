@@ -1,4 +1,3 @@
-import { PlayerInfoPrev } from "../../ui/PlayersInfo/PlayerInfoPrev";
 import styles from "@/app/ui/grids-layout.module.css"
 import PLAYERS from "@/test/playersFetch.json"
 

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { ThemeProvider } from "@/components/theme-provider"
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import './globals.css'
@@ -15,9 +16,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
   return (
     <html lang="en">
-      <body className={`${GeistSans.className}` }>{children}</body>
+      <body className={`${GeistSans.className}`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider></body>
     </html>
   )
 }
