@@ -4,7 +4,7 @@ import styles from "@/app/ui/players-info.module.css"
 import AddIcon from '@mui/icons-material/Add';
 
 
-export function PlayerInfoPrev({ infoPlayer }: { infoPlayer: any }) {
+export function PlayerInfoPrevDetailed({ infoPlayer }: { infoPlayer: any }) {
 
     return (
         <div tabIndex={0} className="grid gird-cols-2 gap-y-4 p-3 max-h-[19rem] focus-within:max-h-[64rem] rounded-lg

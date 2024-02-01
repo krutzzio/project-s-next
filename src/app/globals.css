@@ -74,12 +74,12 @@
   body {
     @apply bg-background text-foreground;
 
-    ::-webkit-scrollbar{
+    ::-webkit-scrollbar {
       width: 2rem;
     }
-    
-    ::-webkit-scrollbar-thumb{
-      background:#292524;
+
+    ::-webkit-scrollbar-thumb {
+      background: #292524;
       border: .75em solid hsl(var(--background));
       border-radius: 100vw;
     }

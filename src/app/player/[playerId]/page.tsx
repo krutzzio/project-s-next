@@ -1,13 +1,11 @@
 import styles from "@/app/ui/grids-layout.module.css"
 import PLAYERS from "@/test/playersFetch.json"
+import Image from "next/image"
 
-export default function Home() {
+export default function PlayerPage({ params }: { params: any }) {
 
     return (
         <main className="">
-            <h1 className="focus:text-orange-600">
-                PAGINA JUGADOR
-            </h1>
         </main>
     )
 }

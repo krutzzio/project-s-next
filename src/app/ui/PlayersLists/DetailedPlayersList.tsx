@@ -1,4 +1,4 @@
-import { PlayerInfoPrev } from "@/app/ui/PlayerInfoPrev";
+import { PlayerInfoPrevDetailed } from "@/app/ui/PlayersLists/PlayerInfoPrevDetailed";
 import styles from "@/app/ui/grids-layout.module.css"
 import PLAYERS from "@/test/playersFetch.json"
 
@@ -9,7 +9,7 @@ export default function DetailedPlayersList() {
     return (
         <section className={styles.gridListPlayers}>
             {
-                playersArray.map((player, i) => <PlayerInfoPrev key={i} infoPlayer={PLAYERS} />)
+                playersArray.map((player, i) => <PlayerInfoPrevDetailed key={i} infoPlayer={PLAYERS} />)
             }
         </section>
     )

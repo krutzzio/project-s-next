@@ -52,6 +52,7 @@
     overflow: auto;
 }
 
+
 .gridLayoutPlayerInfo {
     height: 100vh;
     display: grid;
@@ -79,4 +80,14 @@
 .gridLayoutPlayerInfo .main {
     grid-area: contenido;
     overflow: auto;
+}
+
+.gridSimplePLayerList {
+    display: felx;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.gridSimplePLayerList h1:nth-child(even){
+    background-color: black;
 }
