@@ -1,4 +1,4 @@
-import { PlayerInfoPrevSimple } from "@/app/ui/PlayersLists/PlayerInfoPrevSimple";
+import { PlayerInfoPrevSimple } from "@/app/ui/PlayerCard/PlayerInfoPrevSimple";
 import styles from "@/app/ui/grids-layout.module.css"
 import PLAYERS from "@/test/playersFetch.json"
 
