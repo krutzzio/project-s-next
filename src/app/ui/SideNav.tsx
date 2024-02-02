@@ -10,7 +10,7 @@ export function SideNav() {
 
     return (
         <nav className="flex h-full flex-col px-8 py-4 md:px-4 md:mx-4 ">
-            <main className="h-full px-4 bg-stone-800 rounded">
+            <main className="h-full px-4 bg-stone-800 rounded-lg">
                 <h1 className="flex items-baseline justify-center gap-4 text-3xl pt-8">Ligas <FaBasketball className="text-2xl text-orange-600" /></h1>
                 <ul className="my-8 mx-auto flex flex-col items-baseline justify-center gap-4 text-lg w-fit hover:text-neutral-300">
                     <li><Link href={"/leagues/liga1"} className={`hover:text-orange-600 transition-colors ${ligaSelected === 1 ? `text-orange-500` : ``}`} onClick={() => setLigaSelected(1)} >Liga 1</Link></li>

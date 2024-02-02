@@ -7,7 +7,7 @@ export default function DetailedPlayersList() {
     const len = 16;
     const playersArray = Array(len).fill(0)
     return (
-        <table className="bg-stone-800 rounded-lg w-full mb-4">
+        <table className="bg-stone-800 rounded-lg w-full mb-4 overflow-hidden">
             <thead>
                 <tr>
                     <th className="p-4">Jugador</th>

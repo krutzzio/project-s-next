@@ -2,7 +2,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fill,
             minmax(350px, 1fr));
-    gap: 2rem;
+    gap: 0rem;
+    padding: 0.5rem;
+    background-color: #171717;
+    border-radius: 0.75rem;
 }
 
 .gridLayoutLeagues {
