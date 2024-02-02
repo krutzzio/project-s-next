@@ -24,10 +24,13 @@ export function PlayerInfoCardDetailed({ infoPlayer }: { infoPlayer: any }) {
                 <h3>PPG: {((Number(infoPlayer.T2S) * 2 + Number(infoPlayer.T3S) * 3 + Number(infoPlayer.FTS)) / Number(infoPlayer.GP)).toFixed(2)}</h3>
                 <h3>GP: {infoPlayer.GP}</h3>
             </section>
-            
-            <section className="text-lg flex justify-between my-4">
+
+            <section className="text-lg flex justify-around my-4">
                 <h3>T2: {infoPlayer.T2S}/{infoPlayer.T2A} (%)</h3>
                 <h3>T3: {infoPlayer.T3S}/{infoPlayer.T3A} (%)</h3>
+            </section>
+
+            <section className="text-lg flex justify-center my-4">
                 <h3>FT: {infoPlayer.FTS}/{infoPlayer.FTA} (%)</h3>
             </section>
 
