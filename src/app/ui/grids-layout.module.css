@@ -2,38 +2,36 @@
     display: grid;
     grid-template-columns: repeat(auto-fill,
             minmax(350px, 1fr));
-    gap: 0rem;
-    padding: 0.5rem;
-    background-color: #171717;
+    gap: 0.5rem;
     border-radius: 0.75rem;
 }
 
 .gridLayoutLeagues {
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas:
-        "barra busqueda busqueda busqueda busqueda logo logo"
-        "contenido contenido contenido contenido contenido contenido contenido"
-        "contenido contenido contenido contenido contenido contenido contenido"
-        "contenido contenido contenido contenido contenido contenido contenido"
-        "contenido contenido contenido contenido contenido contenido contenido"
-        "contenido contenido contenido contenido contenido contenido contenido"
-        "contenido contenido contenido contenido contenido contenido contenido"
+        "barra busqueda busqueda busqueda busqueda busqueda logo logo"
+        "contenido contenido contenido contenido contenido contenido contenido contenido"
+        "contenido contenido contenido contenido contenido contenido contenido contenido"
+        "contenido contenido contenido contenido contenido contenido contenido contenido"
+        "contenido contenido contenido contenido contenido contenido contenido contenido"
+        "contenido contenido contenido contenido contenido contenido contenido contenido"
+        "contenido contenido contenido contenido contenido contenido contenido contenido"
     ;
 }
 
 @media (min-width: 768px) {
     .gridLayoutLeagues {
         grid-template-areas:
-            "logo busqueda busqueda busqueda busqueda busqueda busqueda"
-            "barra contenido contenido contenido contenido contenido contenido"
-            "barra contenido contenido contenido contenido contenido contenido"
-            "barra contenido contenido contenido contenido contenido contenido"
-            "barra contenido contenido contenido contenido contenido contenido"
-            "barra contenido contenido contenido contenido contenido contenido"
-            "barra contenido contenido contenido contenido contenido contenido"
+            "logo busqueda busqueda busqueda busqueda busqueda busqueda busqueda"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
         ;
     }
 }
@@ -48,6 +46,9 @@
 
 .gridLayoutLeagues .aside {
     grid-area: barra;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gridLayoutLeagues .main {
@@ -91,6 +92,6 @@
     gap: 2rem;
 }
 
-.gridSimplePLayerList h1:nth-child(even){
+.gridSimplePLayerList h1:nth-child(even) {
     background-color: black;
 }

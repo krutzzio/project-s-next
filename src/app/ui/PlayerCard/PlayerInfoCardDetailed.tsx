@@ -8,7 +8,7 @@ export function PlayerInfoCardDetailed({ infoPlayer }: { infoPlayer: any }) {
 
     return (
         <div tabIndex={0} className="flex flex-col p-3 max-h-[25.5rem] focus-within:max-h-[64rem] 
-         bg-stone-800 border-solid border-4 border-stone-900 rounded-lg focus-within:border-orange-600 overflow-hidden transition-all duration-150">
+         bg-stone-800 border-solid border-4 rounded-lg focus-within:border-orange-600 overflow-hidden transition-all duration-150">
 
             <section className="flex justify-center items-center">
                 <Image src={infoPlayer.img} width={128} height={128} alt="Imagen jugador" />

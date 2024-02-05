@@ -7,23 +7,23 @@ export default function DetailedPlayersList() {
     const len = 16;
     const playersArray = Array(len).fill(0)
     return (
-        <table className="bg-stone-800 rounded-lg w-full mb-4 overflow-hidden">
+        <table className="bg-stone-800 rounded-lg w-full mb-4 overflow-auto">
             <thead>
                 <tr>
                     <th className="p-4">Jugador</th>
-                    <th>Equipo</th>
-                    <th>Generación</th>
-                    <th>T2S</th>
-                    <th>T2A</th>
-                    <th>T2%</th>
-                    <th>T3S</th>
-                    <th>T3A</th>
-                    <th>T3%</th>
-                    <th>FTS</th>
-                    <th>FTA</th>
-                    <th>FT%</th>
-                    <th>PPG</th>
-                    <th>GP</th>
+                    <th className="p-4">Equipo</th>
+                    <th className="p-4">Generación</th>
+                    <th className="p-4">T2S</th>
+                    <th className="p-4">T2A</th>
+                    <th className="p-4">T2%</th>
+                    <th className="p-4">T3S</th>
+                    <th className="p-4">T3A</th>
+                    <th className="p-4">T3%</th>
+                    <th className="p-4">FTS</th>
+                    <th className="p-4">FTA</th>
+                    <th className="p-4">FT%</th>
+                    <th className="p-4">PPG</th>
+                    <th className="p-4">GP </th>
                 </tr>
             </thead>
             <tbody>

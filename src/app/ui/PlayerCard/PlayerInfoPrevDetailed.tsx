@@ -8,7 +8,7 @@ export function PlayerInfoPrevDetailed({ infoPlayer }: { infoPlayer: any }) {
 
     return (
         <div tabIndex={0} className="grid gird-cols-2 gap-y-4 p-3 max-h-[19rem] focus-within:max-h-[64rem] 
-         bg-stone-800 border-solid border-4 border-stone-900 rounded-lg focus-within:border-orange-600 overflow-hidden transition-all duration-150">
+         bg-stone-800 border-solid border-4 rounded-lg focus-within:border-orange-600 overflow-hidden transition-all duration-150">
             <section className="text-xl flex flex-col justify-between">
                 <Link href={`/player/${infoPlayer.playerId}`} className={styles.linkToInfo}>{infoPlayer.name}</Link>
                 <h3>{infoPlayer.team}</h3>
