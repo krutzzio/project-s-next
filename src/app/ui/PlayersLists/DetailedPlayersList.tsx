@@ -11,21 +11,9 @@ export default function DetailedPlayersList() {
     const playersArray = Array(len).fill(0)
     return (
         <section className={styles.gridListPlayers}>
-            {/*
-                playersArray.map((player, i) => <PlayerInfoPrevDetailed key={i} infoPlayer={PLAYERS} />)*/
+            {
+                playersArray.map((player, i) => <PlayerInfoCard2 key={i} infoPlayer={PLAYERS} />)
             }
-            <PlayerInfoPrevDetailed infoPlayer={PLAYERS} />
-            <PlayerInfoPrevDetailed infoPlayer={PLAYERS} />
-            <PlayerInfoPrevDetailed infoPlayer={PLAYERS} />
-            <PlayerInfoPrevDetailed infoPlayer={PLAYERS} />
-            <PlayerInfoCardDetailed infoPlayer={PLAYERS} />
-            <PlayerInfoCardDetailed infoPlayer={PLAYERS} />
-            <PlayerInfoCardDetailed infoPlayer={PLAYERS} />
-            <PlayerInfoCardDetailed infoPlayer={PLAYERS} />
-            <PlayerInfoCard2 infoPlayer={PLAYERS} />
-            <PlayerInfoCard2 infoPlayer={PLAYERS} />
-            <PlayerInfoCard2 infoPlayer={PLAYERS} />
-            <PlayerInfoCard2 infoPlayer={PLAYERS} />
         </section>
     )
 }
