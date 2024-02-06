@@ -74,14 +74,30 @@
   body {
     @apply bg-background text-foreground;
 
+
     ::-webkit-scrollbar {
       width: 2rem;
+    }
+
+    ::-webkit-scrollbar {
+      width: 2rem;
+      height: 2rem;
+    }
+
+    ::-webkit-scrollbar-thumb:horizontal {
+      background: #292524;
+      border-radius: 100vw;
+      border: .75em solid hsl(var(--background));
     }
 
     ::-webkit-scrollbar-thumb {
       background: #292524;
       border: .75em solid hsl(var(--background));
       border-radius: 100vw;
+    }
+
+    ::-webkit-scrollbar-corner {
+      background: hsl(var(--background));
     }
   }
 }

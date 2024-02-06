@@ -4,6 +4,7 @@
             minmax(350px, 1fr));
     gap: 0.5rem;
     border-radius: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 .gridLayoutLeagues {

@@ -3,6 +3,7 @@ import { PlayerInfoCardDetailed } from "@/app/ui/PlayerCard/PlayerInfoCardDetail
 
 import styles from "@/app/ui/grids-layout.module.css"
 import PLAYERS from "@/test/playersFetch.json"
+import { PlayerInfoCard2 } from "../PlayerCard/PlayerInfoCard2";
 
 export default function DetailedPlayersList() {
 
@@ -21,6 +22,10 @@ export default function DetailedPlayersList() {
             <PlayerInfoCardDetailed infoPlayer={PLAYERS} />
             <PlayerInfoCardDetailed infoPlayer={PLAYERS} />
             <PlayerInfoCardDetailed infoPlayer={PLAYERS} />
+            <PlayerInfoCard2 infoPlayer={PLAYERS} />
+            <PlayerInfoCard2 infoPlayer={PLAYERS} />
+            <PlayerInfoCard2 infoPlayer={PLAYERS} />
+            <PlayerInfoCard2 infoPlayer={PLAYERS} />
         </section>
     )
 }
