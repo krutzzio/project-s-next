@@ -10,8 +10,8 @@ export function PlayerInfoCard2({ infoPlayer }: { infoPlayer: any }) {
 
 
     return (
-        <div tabIndex={0} className="grid grid-cols-5 gap-y-6 gap-x-4 p-6 max-h-[17.5rem] bg-stone-800 border-solid border-4 rounded-lg overflow-hidden
-         transition-all duration-150 focus-within:max-h-[64rem]  focus-within:border-orange-600 hover:cursor-pointer focus:cursor-default">
+        <div tabIndex={0} className="grid grid-cols-5 gap-y-6 gap-x-4 p-6 max-h-[17.5rem] bg-stone-800 border-solid border-4 border-transparent rounded-lg overflow-hidden
+         transition-all duration-150 focus-within:max-h-[64rem] focus-within:border-orange-600 hover:cursor-pointer focus:cursor-default">
             <section className="col-span-2 flex flex-col items-start justify-between text-xl w-fit">
                 <Image src={infoPlayer.img} width={75} height={128} alt="Imagen jugador" />
                 <Link href={`/player/${infoPlayer.playerId}`} className={`${styles.linkToInfo} w-fit`}>{infoPlayer.name}</Link>
