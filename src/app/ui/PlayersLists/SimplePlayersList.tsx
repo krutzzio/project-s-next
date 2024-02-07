@@ -1,10 +1,9 @@
 import { PlayerInfoPrevSimple } from "@/app/ui/PlayerCard/PlayerInfoPrevSimple";
-import styles from "@/app/ui/grids-layout.module.css"
 import PLAYERS from "@/test/playersFetch.json"
 
 export default function DetailedPlayersList() {
 
-    const len = 16;
+    const len = 20;
     const playersArray = Array(len).fill(0)
     return (
         <table className="bg-stone-800 rounded-lg w-full mb-4">
@@ -27,28 +26,9 @@ export default function DetailedPlayersList() {
                 </tr>
             </thead>
             <tbody>
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
-                <PlayerInfoPrevSimple infoPlayer={PLAYERS} />
+                {
+                    playersArray.map((player, i) => <PlayerInfoPrevSimple key={i} infoPlayer={PLAYERS} />)
+                }
             </tbody>
         </table>
     )

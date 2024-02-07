@@ -1,7 +1,4 @@
-import Image from "next/image"
 import Link from "next/link"
-import styles from "@/app/ui/players-info.module.css"
-import AddIcon from '@mui/icons-material/Add';
 
 
 export function PlayerInfoPrevSimple({ infoPlayer }: { infoPlayer: any }) {
