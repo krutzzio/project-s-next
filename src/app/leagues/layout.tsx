@@ -1,7 +1,7 @@
 
-import { LogoVindelScouts } from "../ui/LogoVindelScouts";
-import { SearchBar } from "../ui/SearchBar";
-import { SideNav } from "../ui/SideNav"
+import { LogoVindelScouts } from "../ui/LayoutsElements/LogoVindelScouts";
+import { SearchBar } from "../ui/LayoutsElements/SearchBar";
+import { SideNav } from "../ui/LayoutsElements/SideNav"
 import styles from "@/app/ui/grids-layout.module.css"
 
 

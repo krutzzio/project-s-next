@@ -14,9 +14,9 @@ export default function Liga({ params }: { params: any }) {
             <section className="flex gap-24 my-4">
                 <h1 className="text-xl flex items-center">{params.ligaId}</h1>
                 <div className="flex justify-center items-center gap-4">
-                    <h1 className={`${listType ? `text-white` : `text-stone-500`}`}>Detallado</h1>
-                    <Switch id="airplane-mode" onClick={() => setListType(!listType)} />
-                    <h1 className={`${!listType ? `text-white` : `text-stone-500`}`}>Lista</h1>
+                    <h1 className={`${listType ? `dark:text-white` : `text-stone-500`}`}>Detallado</h1>
+                    <Switch id="list-type" onClick={() => setListType(!listType)} />
+                    <h1 className={`${!listType ? `dark:text-white` : `text-stone-500`}`}>Lista</h1>
                 </div>
             </section>
             {

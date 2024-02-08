@@ -4,7 +4,7 @@ import Link from "next/link"
 export function PlayerInfoPrevSimple({ infoPlayer }: { infoPlayer: any }) {
 
     return (
-        <tr className="relative odd:bg-neutral-900 even:bg-neutral-800 hover:bg-orange-600 transition-colors text-center">
+        <tr className="relative odd:bg-neutral-300 dark:odd:bg-neutral-900 dark:even:bg-neutral-800 hover:bg-orange-600 transition-colors text-center">
             <th className="sticky left-0 bg-inherit"><Link className="w-full block p-4" href={`/player/${infoPlayer.playerId}`}>{infoPlayer.name}</Link></th>
             <td>{infoPlayer.team}</td>
             <td>{infoPlayer.generation}</td>
