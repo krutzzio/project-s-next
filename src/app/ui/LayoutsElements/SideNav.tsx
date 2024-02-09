@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { FaBasketball } from "react-icons/fa6";
+import { ThemeSelector } from "../ThemeSelector";
 
 
 export function SideNav() {
@@ -22,6 +23,7 @@ export function SideNav() {
                     <li><Link href={"/leagues/liga7"} className={`hover:text-orange-600 transition-colors ${ligaSelected === 7 ? `text-orange-500` : ``}`} onClick={() => setLigaSelected(7)} >Liga 7</Link></li>
                 </ul>
             </main>
+            <ThemeSelector />
         </nav>
     )
 }

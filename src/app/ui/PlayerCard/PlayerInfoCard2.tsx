@@ -19,7 +19,7 @@ export function PlayerInfoCard2({ infoPlayer }: { infoPlayer: any }) {
                 <h3>{infoPlayer.team}</h3>
                 <h3>{infoPlayer.generation}</h3>
             </section>
-            <section className="col-span-3 grid grid-cols-2 justify-items-stretch text-lg bg-stone-300 rounded-lg">
+            <section className="col-span-3 grid grid-cols-2 justify-items-stretch text-lg bg-stone-300 dark:bg-stone-700 rounded-lg">
                 <article className="col-span-2 flex justify-around ">
                     <h3 className="pt-4 pb-2 h-fit">PPG <span className="text-xl ml-4">{ppg}</span> </h3>
                     <div className="h-full w-1 bg-white dark:bg-stone-800"></div>
@@ -41,7 +41,7 @@ export function PlayerInfoCard2({ infoPlayer }: { infoPlayer: any }) {
                 </article>
             </section>
             <section className="col-span-5">
-                <Link href={"/player/playerId"} className="h-10 bg-stone-800 text-white dark:text-black  dark:bg-white rounded-md flex justify-center items-center gap-2 hover:bg-orange-600 font-bold transition-colors"> <AddIcon /> Info.</Link>
+                <Link href={"/player/playerId"} className="h-10 bg-stone-800 text-white dark:text-black dark:bg-white rounded-md flex justify-center items-center gap-2 hover:bg-orange-600 dark:hover:bg-orange-600 font-bold transition-colors"> <AddIcon /> Info.</Link>
             </section>
             <article className="col-span-5">
                 <h3 className="text-xl mb-2">Description:</h3>
