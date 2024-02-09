@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { FaBasketball } from "react-icons/fa6";
-import { ThemeSelector } from "../ThemeSelector";
+import { ThemeSelector } from "./ThemeSelector";
 
 
 export function SideNav() {

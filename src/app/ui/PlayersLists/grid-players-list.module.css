@@ -1,0 +1,8 @@
+.gridListPlayers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,
+            minmax(415px, 1fr));
+    gap: 0.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}

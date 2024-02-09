@@ -1,12 +1,3 @@
-.gridListPlayers {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,
-            minmax(415px, 1fr));
-    gap: 0.5rem;
-    border-radius: 0.75rem;
-    margin-bottom: 1rem;
-}
-
 .gridLayoutLeagues {
     height: 100vh;
     display: grid;
@@ -55,44 +46,4 @@
 .gridLayoutLeagues .main {
     grid-area: contenido;
     overflow: auto;
-}
-
-
-.gridLayoutPlayerInfo {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-areas:
-        "logo busqueda busqueda busqueda busqueda busqueda busqueda"
-        "contenido contenido contenido contenido contenido contenido contenido"
-        "contenido contenido contenido contenido contenido contenido contenido"
-        "contenido contenido contenido contenido contenido contenido contenido"
-        "contenido contenido contenido contenido contenido contenido contenido"
-        "contenido contenido contenido contenido contenido contenido contenido"
-        "contenido contenido contenido contenido contenido contenido contenido"
-    ;
-}
-
-.gridLayoutPlayerInfo .logo {
-    grid-area: logo;
-}
-
-.gridLayoutPlayerInfo .header {
-    grid-area: busqueda;
-}
-
-.gridLayoutPlayerInfo .main {
-    grid-area: contenido;
-    overflow: auto;
-}
-
-.gridSimplePLayerList {
-    display: felx;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.gridSimplePLayerList h1:nth-child(even) {
-    background-color: black;
 }
