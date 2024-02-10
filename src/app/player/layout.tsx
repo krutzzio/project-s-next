@@ -2,6 +2,7 @@
 import { LogoVindelScouts } from "../ui/LayoutsElements/LogoVindelScouts";
 import { SearchBar } from "../ui/LayoutsElements/SearchBar";
 import styles from "@/app/ui/PlayerProfile/grid-player-profile.module.css"
+import { SideNav } from "../ui/LayoutsElements/SideNav";
 
 
 export default function HomeLayout({
@@ -16,6 +17,9 @@ export default function HomeLayout({
             </div>
             <div className={`${styles.header}`}>
                 <SearchBar />
+            </div>
+            <div className={`${styles.aside}`}>
+                <SideNav />
             </div>
             <div className={`${styles.main}`}>
                 {children}

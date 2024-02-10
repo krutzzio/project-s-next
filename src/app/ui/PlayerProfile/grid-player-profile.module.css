@@ -4,7 +4,7 @@
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas:
-        "logo busqueda busqueda busqueda busqueda busqueda busqueda"
+        "barra busqueda busqueda busqueda busqueda busqueda logo"
         "contenido contenido contenido contenido contenido contenido contenido"
         "contenido contenido contenido contenido contenido contenido contenido"
         "contenido contenido contenido contenido contenido contenido contenido"
@@ -13,6 +13,21 @@
         "contenido contenido contenido contenido contenido contenido contenido"
     ;
 }
+
+@media (min-width: 768px) {
+    .gridLayoutPlayerInfo {
+        grid-template-areas:
+            "logo busqueda busqueda busqueda busqueda busqueda busqueda busqueda"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+            "barra contenido contenido contenido contenido contenido contenido contenido"
+        ;
+    }
+}
+
 
 .gridLayoutPlayerInfo .logo {
     grid-area: logo;
@@ -25,4 +40,11 @@
 .gridLayoutPlayerInfo .main {
     grid-area: contenido;
     overflow: auto;
+}
+
+.gridLayoutPlayerInfo .aside {
+    grid-area: barra;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
