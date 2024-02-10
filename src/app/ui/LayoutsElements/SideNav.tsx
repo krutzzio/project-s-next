@@ -22,8 +22,8 @@ export function SideNav() {
                     <li><Link href={"/leagues/liga6"} className={`hover:text-orange-600 transition-colors ${ligaSelected === 6 ? `text-orange-500` : ``}`} onClick={() => setLigaSelected(6)} >Liga 6</Link></li>
                     <li><Link href={"/leagues/liga7"} className={`hover:text-orange-600 transition-colors ${ligaSelected === 7 ? `text-orange-500` : ``}`} onClick={() => setLigaSelected(7)} >Liga 7</Link></li>
                 </ul>
+                <ThemeSelector />
             </main>
-            <ThemeSelector />
         </nav>
     )
 }
