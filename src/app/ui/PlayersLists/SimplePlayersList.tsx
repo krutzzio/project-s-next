@@ -12,6 +12,8 @@ export default function DetailedPlayersList() {
                     <th className="p-4 bg-white dark:bg-stone-800 sticky rounded-lg left-0">Jugador</th>
                     <th className="p-4">Equipo</th>
                     <th className="p-4">Generación</th>
+                    <th className="p-4">PPG</th>
+                    <th className="p-4">GP </th>
                     <th className="p-4">T2S</th>
                     <th className="p-4">T2A</th>
                     <th className="p-4">T2%</th>
@@ -21,8 +23,6 @@ export default function DetailedPlayersList() {
                     <th className="p-4">FTS</th>
                     <th className="p-4">FTA</th>
                     <th className="p-4">FT%</th>
-                    <th className="p-4">PPG</th>
-                    <th className="p-4">GP </th>
                 </tr>
             </thead>
             <tbody>

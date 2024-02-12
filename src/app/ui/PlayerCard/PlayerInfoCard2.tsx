@@ -7,6 +7,7 @@ import AddIcon from '@mui/icons-material/Add';
 export function PlayerInfoCard2({ infoPlayer }: { infoPlayer: any }) {
 
     const ppg = ((Number(infoPlayer.T2S) * 2 + Number(infoPlayer.T3S) * 3 + Number(infoPlayer.FTS)) / Number(infoPlayer.GP)).toFixed(2)
+    const t2 = `${infoPlayer.T2S}/${infoPlayer.T2A}`
 
 
     return (
@@ -28,7 +29,7 @@ export function PlayerInfoCard2({ infoPlayer }: { infoPlayer: any }) {
                 <div className="col-span-2 h-1  w-full bg-white dark:bg-stone-800"></div>
                 <article className="col-span-2 grid grid-cols-3 justify-items-center">
                     <h3>T2</h3>
-                    <h3 className="text-xl w-fit">{infoPlayer.T2S}/{infoPlayer.T2A}</h3>
+                    <h3 className="text-xl w-fit">{t2}</h3>
                     <h3 className="text-xl">(%)</h3>
                     <div className="col-span-3 h-0.5 w-full bg-white dark:bg-stone-800"></div>
                     <h3>T3</h3>

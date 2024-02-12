@@ -8,17 +8,17 @@ export function PlayerInfoPrevSimple({ infoPlayer }: { infoPlayer: any }) {
             <th className="sticky left-0 bg-inherit"><Link className="w-full block p-4" href={`/player/${infoPlayer.playerId}`}>{infoPlayer.name}</Link></th>
             <td>{infoPlayer.team}</td>
             <td>{infoPlayer.generation}</td>
-            <td>{infoPlayer.T2S}</td>
-            <td>{infoPlayer.T2A}</td>
-            <td>{ }</td>
-            <td>{infoPlayer.T3S}</td>
-            <td>{infoPlayer.T3A}</td>
-            <td>{ }</td>
-            <td>{infoPlayer.FTS}</td>
-            <td>{infoPlayer.FTA}</td>
-            <td>{ }</td>
             <td>{((Number(infoPlayer.T2S) * 2 + Number(infoPlayer.T3S) * 3 + Number(infoPlayer.FTS)) / Number(infoPlayer.GP)).toFixed(2)}</td>
             <td>{infoPlayer.GP}</td>
+            <td>{infoPlayer.T2S}</td>
+            <td>{infoPlayer.T2A}</td>
+            <td>(%)</td>
+            <td>{infoPlayer.T3S}</td>
+            <td>{infoPlayer.T3A}</td>
+            <td>(%)</td>
+            <td>{infoPlayer.FTS}</td>
+            <td>{infoPlayer.FTA}</td>
+            <td>(%)</td>
         </tr>
     )
 }
