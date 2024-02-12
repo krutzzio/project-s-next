@@ -18,37 +18,43 @@ export default function PlayerPage({ params }: { params: any }) {
 
 
     return (
-        <main className="flex flex-col gap-16">
+        <main className="flex flex-col gap-16 p-4">
             <section className="grid grid-cols-5">
                 <Image src={PLAYERS.img} width={150} height={50} alt="PLAYER IMG" className="col-span-2 m-auto" />
                 <article className="col-span-3">
-                    <h1 className="text-9xl">Nom Jugador</h1>
+                    <h1 className="text-8xl">Nom Jugador</h1>
                     <h1 className="text-5xl">Equip</h1>
                     <h1 className="text-5xl">Generació</h1>
                 </article>
             </section>
 
-            <section className="grid grid-cols-5 justify-items-center">
-                <div className="w-44 h-44 rounded-full bg-white dark:bg-stone-800 flex flex-col justify-center items-center">
+            <section className="flex justify-evenly justify-items-center bg-white dark:bg-stone-800 rounded-lg">
+                <div className="w-44 h-44 rounded-xl bg-white dark:bg-stone-800 flex flex-col justify-center items-center">
                     <h3>PPG</h3>
                     <h2 className="text-4xl">{ppg}</h2>
                     <h2 className="text-2xl">(%)</h2>
                 </div>
-                <div className="w-44 h-44 rounded-full bg-white dark:bg-stone-800 flex flex-col justify-center items-center">
+                <div className="dark:bg-background w-1"></div>
+                <div className="w-44 h-44 rounded-xl bg-white dark:bg-stone-800 flex flex-col justify-center items-center">
                     <h3>GP</h3>
                     <h2 className="text-4xl">{PLAYERS.GP}</h2>
                     <h2 className="text-2xl">(%)</h2>
                 </div>
+                <div className="dark:bg-background w-1"></div>
                 <div className="w-44 h-44 rounded-full bg-white dark:bg-stone-800 flex flex-col justify-center items-center">
                     <h3>T2</h3>
                     <h2 className="text-4xl">{t2}</h2>
                     <h2 className="text-2xl">(%)</h2>
                 </div>
+                <div className="dark:bg-background w-1"></div>
+
                 <div className="w-44 h-44 rounded-full bg-white dark:bg-stone-800 flex flex-col justify-center items-center">
                     <h3>T3</h3>
                     <h2 className="text-4xl">{t3}</h2>
                     <h2 className="text-2xl">(%)</h2>
                 </div>
+                <div className="dark:bg-background w-1"></div>
+
                 <div className="w-44 h-44 rounded-full bg-white dark:bg-stone-800 flex flex-col justify-center items-center">
                     <h3>FT</h3>
                     <h2 className="text-4xl">{ft}</h2>
@@ -58,7 +64,7 @@ export default function PlayerPage({ params }: { params: any }) {
 
             <section>
                 <h1 className="text-center text-4xl mb-8">Actual Season</h1>
-                <table className="bg-white dark:bg-stone-800 rounded-lg w-11/12 m-auto mb-4">
+                <table className="bg-white dark:bg-stone-800 rounded-lg w-full m-auto mb-4">
                     <thead>
                         <tr className="">
                             <th className="p-4"></th>
