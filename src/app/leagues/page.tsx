@@ -3,7 +3,7 @@ export default function Liga({ params }: { params: any }) {
 
 
     return (
-        <main className="mx-4">
+        <main className="flex justify-center items-center h-screen">
             Hola
         </main>
     )
