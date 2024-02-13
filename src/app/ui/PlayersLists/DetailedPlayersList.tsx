@@ -1,9 +1,7 @@
-import { PlayerInfoPrevDetailed } from "@/app/ui/PlayerCard/PlayerInfoPrevDetailed";
-import { PlayerInfoCardDetailed } from "@/app/ui/PlayerCard/PlayerInfoCardDetailed";
 
 import styles from "@/app/ui/PlayersLists/grid-players-list.module.css"
 import PLAYERS from "@/test/playersFetch.json"
-import { PlayerInfoCard2 } from "../PlayerCard/PlayerInfoCard2";
+import { PlayerInfoCard } from "../PlayerCard/PlayerInfoCard";
 
 export default function DetailedPlayersList() {
 
@@ -12,7 +10,7 @@ export default function DetailedPlayersList() {
     return (
         <section className={styles.gridListPlayers}>
             {
-                playersArray.map((player, i) => <PlayerInfoCard2 key={i} infoPlayer={PLAYERS} />)
+                playersArray.map((player, i) => <PlayerInfoCard key={i} infoPlayer={PLAYERS} />)
             }
         </section>
     )
