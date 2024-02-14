@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center p-24">
-      <Link href={"/leagues"} className={styles.linkToInfo}>Start Scouting</Link>
+      <Link href={"/leagues"} className={styles.linkToInfo}>Login</Link>
     </main >
   )
 }
