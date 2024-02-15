@@ -4,7 +4,7 @@ import { SideNav } from "../ui/LayoutsElements/SideNav"
 import styles from "@/app/ui/LayoutsElements/grids-layout.module.css"
 
 
-export default function HomeLayout({
+export default function LeaguesLayout({
     children,
 }: {
     children: React.ReactNode

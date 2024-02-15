@@ -1,6 +1,6 @@
 import { LeagueCard } from "../ui/LeaguesElements/LeagueCard";
 
-export default function Login() {
+export default function Leagues() {
 
     const len = 16;
     const playersArray = Array(len).fill(0)
