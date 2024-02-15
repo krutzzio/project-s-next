@@ -1,5 +1,5 @@
 
-export default function Liga({ params }: { params: any }) {
+export default function Login() {
 
 
     return (
