@@ -1,4 +1,4 @@
-import { PlayerInfoPrevSimple } from "@/app/ui/PlayerCard/PlayerInfoPrevSimple";
+import { PlayerInfoRow } from "@/app/ui/PlayerCard/PlayerInfoRow";
 import PLAYERS from "@/test/playersFetch.json"
 
 export default function DetailedPlayersList() {
@@ -27,7 +27,7 @@ export default function DetailedPlayersList() {
             </thead>
             <tbody>
                 {
-                    playersArray.map((player, i) => <PlayerInfoPrevSimple key={i} infoPlayer={PLAYERS} />)
+                    playersArray.map((player, i) => <PlayerInfoRow key={i} infoPlayer={PLAYERS} />)
                 }
             </tbody>
         </table>

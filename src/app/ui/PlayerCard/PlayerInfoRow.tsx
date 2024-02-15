@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 
-export function PlayerInfoPrevSimple({ infoPlayer }: { infoPlayer: any }) {
+export function PlayerInfoRow({ infoPlayer }: { infoPlayer: any }) {
 
     return (
         <tr className="relative odd:bg-neutral-300 dark:odd:bg-neutral-900 dark:even:bg-neutral-800 hover:bg-orange-600 dark:hover:bg-orange-600 transition-colors text-center">

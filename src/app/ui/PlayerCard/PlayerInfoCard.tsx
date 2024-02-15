@@ -4,7 +4,7 @@ import styles from "@/app/ui/players-info.module.css"
 import AddIcon from '@mui/icons-material/Add';
 
 
-export function PlayerInfoCard2({ infoPlayer }: { infoPlayer: any }) {
+export function PlayerInfoCard({ infoPlayer }: { infoPlayer: any }) {
 
     const ppg = ((Number(infoPlayer.T2S) * 2 + Number(infoPlayer.T3S) * 3 + Number(infoPlayer.FTS)) / Number(infoPlayer.GP)).toFixed(2)
     const t2 = `${infoPlayer.T2S}/${infoPlayer.T2A}`
