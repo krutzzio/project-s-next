@@ -4,7 +4,7 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas:
-        "barra busqueda busqueda busqueda busqueda busqueda logo logo"
+        "menu busqueda busqueda busqueda busqueda busqueda logo logo"
         "contenido contenido contenido contenido contenido contenido contenido contenido"
         "contenido contenido contenido contenido contenido contenido contenido contenido"
         "contenido contenido contenido contenido contenido contenido contenido contenido"
@@ -12,6 +12,27 @@
         "contenido contenido contenido contenido contenido contenido contenido contenido"
         "contenido contenido contenido contenido contenido contenido contenido contenido"
     ;
+}
+.gridLayoutLeagues .logo {
+    grid-area: logo;
+}
+
+.gridLayoutLeagues .header {
+    grid-area: busqueda;
+}
+
+.gridLayoutLeagues .aside {
+    grid-area: barra;
+    display: none;
+}
+
+.gridLayoutLeagues .expandedMenu{
+    grid-area: menu;
+}
+
+.gridLayoutLeagues .main {
+    grid-area: contenido;
+    overflow: auto;
 }
 
 @media (min-width: 768px) {
@@ -26,24 +47,15 @@
             "barra contenido contenido contenido contenido contenido contenido contenido"
         ;
     }
+    .gridLayoutLeagues .aside {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+
+    }
+    .gridLayoutLeagues .expandedMenu{
+        display: none;
+    }
+
 }
 
-.gridLayoutLeagues .logo {
-    grid-area: logo;
-}
-
-.gridLayoutLeagues .header {
-    grid-area: busqueda;
-}
-
-.gridLayoutLeagues .aside {
-    grid-area: barra;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.gridLayoutLeagues .main {
-    grid-area: contenido;
-    overflow: auto;
-}

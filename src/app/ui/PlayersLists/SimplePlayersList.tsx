@@ -9,7 +9,7 @@ export default function DetailedPlayersList() {
         <table className="bg-white dark:bg-stone-800 rounded-lg w-full mb-4">
             <thead>
                 <tr className="">
-                    <th className="p-4 bg-white dark:bg-stone-800 sticky rounded-lg left-0">Jugador</th>
+                    <th className="p-4 bg-white dark:bg-stone-800 sticky rounded-lg -left-1">Jugador</th>
                     <th className="p-4">Equipo</th>
                     <th className="p-4">Generación</th>
                     <th className="p-4">PPG</th>

@@ -1,3 +1,4 @@
+import { ExpandedNav } from "@/app/ui/LayoutsElements/ExpandedNav";
 import { LogoVindelScouts } from "../../ui/LayoutsElements/LogoVindelScouts";
 import { SearchBar } from "../../ui/LayoutsElements/SearchBar";
 import { SideNav } from "../../ui/LayoutsElements/SideNav"
@@ -19,6 +20,9 @@ export default function HomeLayout({
             </div>
             <div className={`${styles.aside}`}>
                 <SideNav />
+            </div>
+            <div className={`${styles.expandedMenu}`}>
+                <ExpandedNav />
             </div>
             <div className={`${styles.main}`}>
                 {children}
