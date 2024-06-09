@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 240 0% 90%;
+    --background: 0 0% 90%;
     --foreground: 0 0% 3.9%;
 
     --card: 0 0% 100%;
@@ -13,7 +13,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
-    --primary: 0 0% 9%;
+    --primary: 0 0% 100%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 0 0% 96.1%;
@@ -36,7 +36,7 @@
   }
 
   .dark {
-    --background: 0 0% 3.9%;
+    --background: 213 20% 11%;
     --foreground: 0 0% 98%;
 
     --card: 0 0% 3.9%;
@@ -45,7 +45,7 @@
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 98%;
+    --primary: 216 21% 14%;
     --primary-foreground: 0 0% 9%;
 
     --secondary: 0 0% 14.9%;
@@ -73,31 +73,5 @@
 
   body {
     @apply bg-background text-foreground;
-
-
-    ::-webkit-scrollbar {
-      width: 2rem;
-    }
-
-    ::-webkit-scrollbar {
-      width: 2rem;
-      height: 2rem;
-    }
-
-    ::-webkit-scrollbar-thumb:horizontal {
-      background: #292524;
-      border-radius: 100vw;
-      border: .75em solid hsl(var(--background));
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #292524;
-      border: .75em solid hsl(var(--background));
-      border-radius: 100vw;
-    }
-
-    ::-webkit-scrollbar-corner {
-      background: hsl(var(--background));
-    }
   }
 }

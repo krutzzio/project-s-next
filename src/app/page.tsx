@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from "@/app/ui/players-info.module.css"
+import styles from "@/components/players-info.module.css"
 
 export default function Home() {
 

@@ -38,7 +38,7 @@
 @media (min-width: 768px) {
     .gridLayoutLeagues {
         grid-template-areas:
-            "logo busqueda busqueda busqueda busqueda busqueda busqueda busqueda"
+            "barra busqueda busqueda busqueda busqueda busqueda busqueda busqueda"
             "barra contenido contenido contenido contenido contenido contenido contenido"
             "barra contenido contenido contenido contenido contenido contenido contenido"
             "barra contenido contenido contenido contenido contenido contenido contenido"
@@ -49,8 +49,6 @@
     }
     .gridLayoutLeagues .aside {
         display: block;
-        width: 90%;
-        margin: 0 auto;
 
     }
     .gridLayoutLeagues .expandedMenu{

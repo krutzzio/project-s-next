@@ -7,7 +7,8 @@ export default function LoginLayout({
     children: React.ReactNode
 }) {
     return (
-        <div className="">
+        <div className="grid grid-cols-2">
+            <div></div>
             {children}
         </div>
     )

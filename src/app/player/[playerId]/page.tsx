@@ -1,6 +1,6 @@
-import { PlayerMainStats } from "@/app/ui/PlayerProfile/PlayerMainStats"
-import { PlayerTableActualSeason } from "@/app/ui/PlayerProfile/PlayerTableActualSeason"
-import { PlayerTableLastMatches } from "@/app/ui/PlayerProfile/PlayerTableLastMatches"
+import { PlayerMainStats } from "@/components/PlayerProfile/PlayerMainStats"
+import { PlayerTableActualSeason } from "@/components/PlayerProfile/PlayerTableActualSeason"
+import { PlayerTableLastMatches } from "@/components/PlayerProfile/PlayerTableLastMatches"
 import PLAYERS from "@/test/playersFetch.json"
 import Image from "next/image"
 

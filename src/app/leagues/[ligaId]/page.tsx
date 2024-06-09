@@ -1,7 +1,7 @@
 "use client"
 
-import DetailedPlayersList from "@/app/ui/PlayersLists/DetailedPlayersList";
-import SimplePlayersList from "@/app/ui/PlayersLists/SimplePlayersList";
+import DetailedPlayersList from "@/components/PlayersLists/DetailedPlayersList";
+import SimplePlayersList from "@/components/PlayersLists/SimplePlayersList";
 import { useState } from "react";
 import { Switch } from "@/components/ui/switch"
 

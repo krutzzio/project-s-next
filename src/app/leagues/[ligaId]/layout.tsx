@@ -1,8 +1,8 @@
-import { ExpandedNav } from "@/app/ui/LayoutsElements/ExpandedNav";
-import { LogoVindelScouts } from "../../ui/LayoutsElements/LogoVindelScouts";
-import { SearchBar } from "../../ui/LayoutsElements/SearchBar";
-import { SideNav } from "../../ui/LayoutsElements/SideNav"
-import styles from "@/app/ui/LayoutsElements/grids-layout.module.css"
+import { ExpandedNav } from "@/components/LayoutsElements/ExpandedNav";
+import { LogoVindelScouts } from "../../../components/LayoutsElements/LogoVindelScouts";
+import { SearchBar } from "../../../components/LayoutsElements/SearchBar";
+import { SideNav } from "../../../components/LayoutsElements/SideNav"
+import styles from "@/components/LayoutsElements/grids-layout.module.css"
 
 
 export default function HomeLayout({
@@ -12,9 +12,7 @@ export default function HomeLayout({
 }) {
     return (
         <div className={`${styles.gridLayoutLeagues}`}>
-            <div className={`${styles.logo}`}>
-                <LogoVindelScouts />
-            </div>
+            
             <div className={`${styles.header}`}>
                 <SearchBar />
             </div>

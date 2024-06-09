@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaBasketball } from "react-icons/fa6";
 import { ThemeSelector } from "./ThemeSelector";
+import Image from "next/image";
 
 
 export function SideNav() {
@@ -10,8 +11,11 @@ export function SideNav() {
     const [ligaSelected, setLigaSelected] = useState<number | null>(null)
 
     return (
-        <nav className="flex h-full flex-col py-4">
-            <main className="h-full px-4 bg-white shadow-xl dark:bg-stone-800 rounded-lg">
+        <nav className="flex h-full flex-col ">
+
+            <main className="h-full px-4 bg-primary shadow-xl">
+                <Image src={"/logo.png"} alt="Logo" width={500} height={500} className="md:w-40" />
+
                 <h1 className="flex items-baseline justify-center gap-4 text-3xl pt-8">Ligas <FaBasketball className="text-2xl min-w-7 text-orange-600" /></h1>
                 <ul className="my-8 mx-auto flex flex-col items-baseline justify-center gap-4 text-lg w-fit hover:text-neutral-500">
                     <li><Link href={"/leagues/liga1"} className={`hover:text-orange-600 font-semibold transition-colors ${ligaSelected === 1 ? `text-orange-500` : ``}`} onClick={() => setLigaSelected(1)} >Liga 1</Link></li>

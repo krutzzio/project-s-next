@@ -1,5 +1,5 @@
 
-import styles from "@/app/ui/PlayersLists/grid-players-list.module.css"
+import styles from "@/components/PlayersLists/grid-players-list.module.css"
 import PLAYERS from "@/test/playersFetch.json"
 import { PlayerInfoCard } from "../PlayerCard/PlayerInfoCard";
 

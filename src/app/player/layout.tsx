@@ -1,8 +1,8 @@
 
-import { LogoVindelScouts } from "../ui/LayoutsElements/LogoVindelScouts";
-import { SearchBar } from "../ui/LayoutsElements/SearchBar";
-import styles from "@/app/ui/PlayerProfile/grid-player-profile.module.css"
-import { SideNav } from "../ui/LayoutsElements/SideNav";
+import { LogoVindelScouts } from "../../components/LayoutsElements/LogoVindelScouts";
+import { SearchBar } from "../../components/LayoutsElements/SearchBar";
+import styles from "@/components/PlayerProfile/grid-player-profile.module.css"
+import { SideNav } from "../../components/LayoutsElements/SideNav";
 
 
 export default function HomeLayout({
